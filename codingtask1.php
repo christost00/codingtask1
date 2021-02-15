@@ -39,9 +39,9 @@ $tempc = $tempk - 273.15;
 
 //Handling the temperature response
 if (tempc>20) {
-  $tempg = "Christos Teneketzoglou and Temperature more than 20C. $tempc C";
+  $tempg = "Temperature more than 20C. $tempc C";
 } else {
-  $tempg = "Christos Teneketzoglou and Temperature less than 20C. $tempc C";
+  $tempg = "Temperature less than 20C. $tempc C";
 }
 
 
@@ -67,7 +67,7 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 30,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "{ \"body\": \"$tempg\",\"to\" : \"+306978745957\",\"from\": \"amdTelecom\"}",
+  CURLOPT_POSTFIELDS => "{ \"body\": \"$tempg\",\"to\" : \"+30000000000\",\"from\": \"amdTelecom\"}",
   CURLOPT_HTTPHEADER => array(
     "authorization: ",
     "content-type: application/json"
