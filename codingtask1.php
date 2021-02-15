@@ -1,5 +1,5 @@
 <?php
-//Get temperature from openweathermap api
+//Get temperature from api
 $Url = "";
 
 
