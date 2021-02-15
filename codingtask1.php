@@ -60,7 +60,7 @@ if (tempc>20) {
 $curl = curl_init();
 //using an associative array to send data
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://connect.routee.net/sms",
+  CURLOPT_URL => "URL",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
